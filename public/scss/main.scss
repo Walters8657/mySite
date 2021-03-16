@@ -1,0 +1,29 @@
+@import 'fontSizes';
+
+body {
+    color: #fafafa;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+header {
+    height: 200px; //Header height
+    width: 100vw;
+    background-color: #428ecc; //Sets bg color to desired color
+
+    //Sets background img positioning to right and auto height fill
+    background-image: url('/images/me.png'); 
+    background-size: auto 100%; // W x H
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    //Sets background img positioning to right and auto height fill
+
+    div { //Contains test to the left of the img
+        display: flex; //Centers header text vertically
+        align-items: center;
+
+        height: 100%; //Flex box fills hieght of header
+
+        padding-left: 25px;
+    }
+}
