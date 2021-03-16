@@ -1,8 +1,11 @@
 const express = require("express");
 var app = express();
+var favicon = require('serve-favicon');
 
 app.set('view engine', 'ejs'); //Use EJS rendering engine
 app.use(express.static('public'));
+
+app.use(favicon(__dirname + '/public/images/me.ico'));
 
 //Index page
 app.get("/", function(req, res) {
