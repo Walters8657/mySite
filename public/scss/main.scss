@@ -3,7 +3,12 @@
 
 body {
     color: $black;
+    background-color: $white;
     font-family: 'Ubuntu', 'sans-serif';
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -21,7 +26,7 @@ header {
     background-position-y: bottom;
     //Sets background img positioning to right and auto height fill
 
-    div { //Contains test to the left of the img
+    div { //Contains text to the left of the img
         display: flex; //Centers header text vertically
         align-items: center;
 
@@ -34,17 +39,15 @@ header {
     }
 }
 
-#aboutMe {
-    max-width: 600px;
-    padding: 10px;
-    h2 {
-        margin-bottom: 10px;
-    }
-}
-
 footer {
     text-align: center;
     background-color: $blue;
     color: $white;
-    padding: 20px;
+    padding: 10px;
+    a, img {
+        height: 30px;
+    }
+    img {
+        margin: 0px 5px 5px;
+    }
 }
