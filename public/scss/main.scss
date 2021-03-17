@@ -27,13 +27,24 @@ header {
 
         height: 100%; //Flex box fills hieght of header
 
-        padding: 0px 25px;
+        padding: 0px 20px;
         span {
             width: calc(100% - 110px);
         }
     }
 }
 
+#aboutMe {
+    max-width: 600px;
+    padding: 10px;
+    h2 {
+        margin-bottom: 10px;
+    }
+}
+
 footer {
     text-align: center;
+    background-color: $blue;
+    color: $white;
+    padding: 20px;
 }
