@@ -1,14 +1,17 @@
 @import 'fontSizes';
+@import 'variables';
 
 body {
-    color: #fafafa;
+    color: $black;
     font-family: 'Ubuntu', 'sans-serif';
 }
 
 header {
-    height: 200px; //Header height
+    height: 180px; //Header height
     width: 100vw;
-    background-color: #428ecc; //Sets bg color to desired color
+    background-color: $blue; //Sets bg color to desired color
+
+    color: $white;
 
     //Sets background img positioning to right and auto height fill
     background-image: url('/images/me.png'); 
@@ -24,6 +27,13 @@ header {
 
         height: 100%; //Flex box fills hieght of header
 
-        padding-left: 25px;
+        padding: 0px 25px;
+        span {
+            width: calc(100% - 110px);
+        }
     }
+}
+
+footer {
+    text-align: center;
 }
