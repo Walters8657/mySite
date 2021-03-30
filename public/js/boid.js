@@ -6,7 +6,7 @@ class Boid {
         this.velocity.setMag(random(2, 1.5)); //Sets speed to random speed
         this.acceleration = createVector(); //Sets acceleration to a vector
         this.perceptionRadius = 30; //Sets thebirds view radius
-        this.maxForce = 0.1; //Sets how heavily Boids turn
+        this.maxForce = 0.02; //Sets how heavily Boids turn
         this.speed = 1; //Sets speed
     }
 
@@ -119,8 +119,8 @@ class Boid {
 
     show() {
         let theta = this.velocity.heading() + radians(90); //Gets direction in degrees
-        fill(127); //BG Color
-        stroke(200); //Stroke
+        fill(169); //BG Color
+        stroke(269); //Stroke
         push();
         translate(this.position.x, this.position.y); //Moves triangle
         rotate(theta); //Rotates triangle
