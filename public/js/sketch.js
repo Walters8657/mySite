@@ -1,7 +1,7 @@
 const flock = [];
 
 function setup() {
-    var canvas = createCanvas(window.innerWidth, 360);
+    var canvas = createCanvas(600, 360);
     canvas.parent('flocking');
 
     for (var i = 0; i < 100; i++) {

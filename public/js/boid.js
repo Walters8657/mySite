@@ -5,7 +5,7 @@ class Boid {
         this.velocity = p5.Vector.random2D();
         this.velocity.setMag(random(2, 1.5));
         this.acceleration = createVector();
-        this.perceptionRadius = 25;
+        this.perceptionRadius = 50;
         this.maxForce = 0.1;
         this.speed = 1;
     }
@@ -118,9 +118,25 @@ class Boid {
     }
 
     show() {
+        /*
         strokeWeight(10);
         stroke(255);
         point(this.position.x, this.position.y)
+        */
+
+        let theta = this.velocity.heading() + radians(90); //Gets direction in degrees
+        fill(127); //BG Color
+        stroke(200); //Stroke
+        push();
+        translate(this.position.x, this.position.y); //Moves triangle
+        rotate(theta); //Rotates triangle
+        beginShape(); //Draws shape begin
+        vertex(0, -6); //Sets a vertex
+        vertex(-3, 6); //Sets a vertex
+        vertex(3, 6); //Sets a vertex
+        endShape(CLOSE); //Shape is done
+        pop();
+
     }
 
 }
