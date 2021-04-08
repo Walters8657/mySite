@@ -44,6 +44,9 @@ nav {
     ul {
         li {
             display: inline;
+            a {
+                padding: 5px;
+            }
         }
         li:not(:nth-last-child(1)):after {
             content: ' | ';
