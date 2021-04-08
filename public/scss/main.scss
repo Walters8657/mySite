@@ -40,6 +40,20 @@ header {
     }
 }
 
+nav {
+    ul {
+        li {
+            display: inline;
+        }
+        li:not(:nth-last-child(1)):after {
+            content: ' | ';
+            padding: 5px;
+        }
+        margin: 10px;
+        text-align: center;
+    }
+}
+
 footer {
     text-align: center;
     background-color: $blue;
