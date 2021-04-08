@@ -50,7 +50,6 @@ nav {
         }
         li:not(:nth-last-child(1)):after {
             content: ' | ';
-            padding: 5px;
         }
         margin: 10px;
         text-align: center;
