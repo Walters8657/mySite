@@ -1,0 +1,31 @@
+#resumeContainer {
+    display: flex;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+#resumeAside {
+    display: inline-block;
+    padding: 20px;
+    border-right: 2px solid $black;
+    div {
+        margin-bottom: 40px;
+        p, li {
+            margin-bottom: 15px;
+        }
+    }
+    div:nth-of-type(3) {
+        ul {
+            display: inline-block;
+        }
+        ul:nth-of-type(2) {
+            float: right;
+            text-align: right;
+        }
+    }
+}
+
+#mainResumeContent {
+    display: inline-block;
+    padding: 20px;
+}

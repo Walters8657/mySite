@@ -12,6 +12,12 @@ a, a:visited {
     color: $black;
 }
 
+hr {
+    height: 1px;
+    background-color: $black;
+    border-radius: 10px;
+}
+
 header {
     height: 180px; //Header height
     width: 100vw;
@@ -68,3 +74,5 @@ footer {
         margin: 0px 5px 5px;
     }
 }
+
+@import 'resume';
