@@ -1,7 +1,9 @@
-#resumeContainer {
-    display: flex;
-    margin: 20px auto;
-    max-width: 900px;
+@media (min-width: 676px) {
+    #resumeContainer {
+        display: flex;
+        margin: 20px auto;
+        max-width: 900px;
+    }
 }
 
 #resumeAside {
@@ -26,6 +28,5 @@
 }
 
 #mainResumeContent {
-    display: inline-block;
     padding: 20px;
 }
