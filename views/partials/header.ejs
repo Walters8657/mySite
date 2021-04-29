@@ -14,7 +14,6 @@
 <body>
 
 <header>
-    <canvas id="headerBubbles"></canvas>
     <div>
         <span>
             <h1>Michael Walters</h1>
@@ -24,10 +23,6 @@
     
             <% if (page == 'Resume') { %>
                 <p>Resume</p>
-            <% }%>
-    
-            <% if (page == 'miniProject') { %>
-                <p>Mini Projects</p>
             <% }%>
         </span>
     </div>
@@ -45,12 +40,6 @@
             <li><a href="/resume" style="background-color:#322b24; padding: 5px; border-radius: 10px; color: #fafafa">Resume</a></li>
         <% } else { %>
             <li><a href="/resume">Resume</a></li>
-        <% } %>
-
-        <% if (page == 'miniProject') { %>
-            <li><a href="/" style="background-color:#322b24; padding: 5px; border-radius: 10px; color: #fafafa">Mini Projects</a></li>
-        <% } else { %>
-            <li><a href="/miniProjects">Mini Projects</a></li>
         <% } %>
     </ul>
 </nav>

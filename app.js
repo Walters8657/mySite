@@ -16,12 +16,6 @@ app.get("/resume", function(req, res) {
     res.render("pages/resume");
 });
 
-app.get("/miniProjects", function(req, res) {
-    res.render("pages/miniProjects");
-});
-
-
-
 //Start the server
 app.listen(8080, () => {
     console.log("Listening on port 8080");
