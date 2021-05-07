@@ -1,6 +1,10 @@
+h2 {
+    text-align: center;
+}
+
 .productHighlight {
-    padding: 40px 10px;
-    @media (min-width: 960px) {
+    padding: 10px 10px 50px;
+    @media (min-width: 980px) {
         display: grid;
         grid-template-columns: auto 300px 600px auto;
         column-gap: 20px;
