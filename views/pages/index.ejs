@@ -1,11 +1,17 @@
 <%- include ('./../partials/header', {page: 'Home'}) %>  
 
-<div class="projectBeingBuilt">
-    <h2>Woah! You're here early!</h2>
-    <div>
-        <span></span> <span></span> <span></span>
+<div id="speedometer" class="productHighlight">
+    <div id="speedoImgContainer">
+        <img src="/images/speedoGreen.svg" alt="Speedometer app screenshot">
+        <img src="/images/speedoYellow.svg" alt="Speedometer app screenshot">
+        <img src="/images/speedoRed.svg" alt="Speedometer app screenshot">
     </div>
-    <p>Please check back later to see if I'm done yet</p>
+
+    <div>
+        <p>
+            This app was designed to create a better way for users to track their speed along with the speed limit of the road they're driving on. It also serves as a way for parents or guardians to keep track of whether or not their child is speeding. This works based off of a three strike system, and allows the parent or guardian to set the limit for how fast and how long the child can speed, and who to notify if they do. 
+        </p>
+    </div>
 </div>
 
 <%- include ('./../partials/footer') %>  
