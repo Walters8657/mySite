@@ -33,15 +33,25 @@ header {
     background-position-y: bottom;
     //Sets background img positioning to right and auto height fill
 
-    div { //Contains text to the left of the img
+    div:nth-of-type(1) { //Contains text to the left of the img
         display: flex; //Centers header text vertically
         align-items: center;
 
-        height: 100%; //Flex box fills height of header
+        height: calc(100% - 1.2rem); //Flex box fills height of header minus room for links
 
         padding: 0px 20px;
         span {
             width: calc(100% - 110px);
+        }
+    }
+    div:nth-of-type(2) {
+        text-align: center;
+        font-size: 0.8rem;
+        a:not(:nth-of-type(1)):before {
+            content: " | "
+        }
+        a {
+            color: $white;
         }
     }
 }

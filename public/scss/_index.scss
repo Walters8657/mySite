@@ -2,15 +2,6 @@
     padding: 30px 15px 30px;
     max-width: 900px;
     margin: auto;
-
-    div {
-        text-align: center;
-        padding-top: 15px;
-        font-size: 0.8rem;
-        a:not(:nth-of-type(1)):before {
-            content: " | "
-        }
-    }
 }
 
 .productHighlight {
