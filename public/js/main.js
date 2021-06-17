@@ -1,1 +1,0 @@
-console.log("Congrats! Youve discovered the devloper console in your browser! I havent done anything that needs front end JS yet so this one console.log is going to have to do it for now.");
