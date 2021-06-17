@@ -16,34 +16,8 @@
         </span>
     </div>
 
-    <div>
-        <a href="https://www.linkedin.com/in/michael-walters-0a061318a/" target="_blank" rel="noopener">
-            LinkedIn
-        </a>
-        <a href="https://www.instagram.com/_michael.walters/" target="_blank" rel="noopener">
-            Instagram
-        </a>
-        <a href="https://twitter.com/__Walters__/" target="_blank" rel="noopener">
-            Twitter
-        </a>
-        <a href="https://github.com/Walters8657" target="_blank" rel="noopener">
-            Github
-        </a>
-    </div>
+    <%- include('socialLinks') %> 
+
 </header>
 
-<nav>
-    <ul>
-        <% if (page == 'Home') { %>
-            <li><a href="/" style="background-color:#322b24; padding: 5px; border-radius: 10px; color: #fafafa">Home</a></li>
-        <% } else { %>
-            <li><a href="/">Home</a></li>
-        <% } %>
-
-        <% if (page == 'Resume') { %>
-            <li><a href="/resume" style="background-color:#322b24; padding: 5px; border-radius: 10px; color: #fafafa">Resume</a></li>
-        <% } else { %>
-            <li><a href="/resume">Resume</a></li>
-        <% } %>
-    </ul>
-</nav>
+<%- include('nav', {page: page}) %> 
