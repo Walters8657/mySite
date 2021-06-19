@@ -1,16 +1,16 @@
-<%- include ('./../partials/header', {page: 'Home'}) %>  
+<%- include ("./../partials/header", {page: "Home", title: "Michael Walters Development"}) %>  
 
 <div id="aboutMe">
     <h2>About Me</h2>
     <hr>
-    <p>As you might have guessed by now, my name is Michael, and I'm a full stack engineer. Lately I've been focusing more on the visual aspects of projects, both designing mockups as well as coding them into existence. While I was at Winthrop University, I was always torn between working on making things look good, and making them work on the back end, so naturally I settled on doing both. Check out some of the projects I've worked on bellow to get an idea of what I can do!</p>
+    <p>As you might have guessed by now, my name is Michael, and I'm a full stack engineer. Lately I've been focusing more on the visual aspects of projects, both designing mockups as well as coding them into existence. While I was at Winthrop University, I was always torn between working on making things look good, and making them work on the back end, so naturally I settled on doing both. Check out some of the projects I've worked on below to get an idea of what I can do!</p>
 </div>
 
 <div id="speedometer" class="productHighlight">
     <div id="speedoImgContainer">
-        <img src="/images/speedoGreen.svg" alt="Speedometer app screenshot">
-        <img src="/images/speedoYellow.svg" alt="Speedometer app screenshot">
-        <img src="/images/speedoRed.svg" alt="Speedometer app screenshot">
+        <img id="speedoImg1" onclick="showProjectImg('speedoImg1')" src="/images/appScreenshots/speedoGreen.svg" alt="Speedometer app screenshot">
+        <img id="speedoImg2" onclick="showProjectImg('speedoImg2')" src="/images/appScreenshots/speedoYellow.svg" alt="Speedometer app screenshot">
+        <img id="speedoImg3" onclick="showProjectImg('speedoImg3')" src="/images/appScreenshots/speedoRed.svg" alt="Speedometer app screenshot">
     </div>
 
     <div>
@@ -20,14 +20,17 @@
             <p>
                 This app was designed to create a better way for users to track their speed along with the speed limit of the road they're driving on. It also serves as a way for parents or guardians to keep track of whether or not their child is speeding. This works based off of a three strike system, and allows the parent or guardian to set the limit for how fast and how long the child can speed, as well as who to notify if they do. 
             </p>
+            <p>
+                <a href="https://github.com/Walters8657/Android-Speedometer" target="blank">View on GitHub</a>
+            </p>
         </span>
     </div>
 </div>
 
 <div id="schedulerApp" class="productHighlight">
     <div id="schedulerImgContainer">
-        <img src="/images/schedulerCalendar.png" alt="Scheduler calendar screenshot">
-        <img src="/images/schedulerNewEvent.png" alt="Scheduler new event screenshot">
+        <img id="cahsmImg1" onclick="showProjectImg('cahsmImg1')" src="/images/appScreenshots/schedulerCalendar.png" alt="Scheduler calendar screenshot">
+        <img id="cahsmImg2" onclick="showProjectImg('cahsmImg2')" src="/images/appScreenshots/schedulerNewEvent.png" alt="Scheduler new event screenshot">
     </div>
 
     <div>
@@ -37,7 +40,22 @@
             <p>
                 This app was designed to give the children's attention home of Rock Hill a better way to organize their children's schedules. Previously they had been keeping track of the schedules on paper, but with this new system it allowed every child and staff member to view the schedules they need to see. It also opened up the ability to easily generate reports based on name, age, gender, event, and date to know if events are being attended when they are scheduled. 
             </p>
+            <p>
+                <a href="https://github.com/Walters8657/Schedule-Manager" target="blank">View on Github</a>
+            </p>
         </span>
+    </div>
+</div>
+
+<div id="expandImages">
+    <div>
+        <img id="expandSpedo1" onclick="" src="/images/appScreenshots/speedoGreen.svg" alt="Speedometer app screenshot">
+        <img id="expandSpedo2" onclick="" src="/images/appScreenshots/speedoYellow.svg" alt="Speedometer app screenshot">
+        <img id="expandSpedo3" onclick="" src="/images/appScreenshots/speedoRed.svg" alt="Speedometer app screenshot">
+        
+        <img id="expandScheduler1" onclick="" src="/images/appScreenshots/schedulerCalendar.png" alt="Scheduler calendar screenshot">
+        <img id="expandScheduler2" onclick="" src="/images/appScreenshots/schedulerNewEvent.png" alt="Scheduler new event screenshot">
+        <p onclick="hideProjectImages()">Close</p>
     </div>
 </div>
 
