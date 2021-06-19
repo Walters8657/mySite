@@ -31,7 +31,7 @@
             display: block;
             text-align: right;
         }
-    } 
+    }
 }
 
 #speedometer {
@@ -58,4 +58,32 @@
             width: 300px;
         }
     }
+}
+
+#expandImages {
+    //display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    img {
+        display: none;
+    }
+}
+
+.showExpandedImgDiv {
+    display: flex !important;
+}
+
+.showExpandedImg {
+    display: block !important;
 }
