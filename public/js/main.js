@@ -14,23 +14,21 @@ var expandedSpeedo3 = document.getElementById("expandSpedo3");
 var expandScheduler1 = document.getElementById("expandScheduler1");
 var expandScheduler2 = document.getElementById("expandScheduler2");
 
-var images = [speedoImg1, speedoImg2, speedoImg3, cahsmImg1, cahsmImg2];
-var expandedImages = [expandSpedo1, expandSpedo2, expandSpedo3, expandScheduler1, expandScheduler2];
+var images = [speedoImg1, speedoImg2, speedoImg3, cahsmImg1, cahsmImg2]; //Stores the actual image elements to click on
+var expandedImages = [expandSpedo1, expandSpedo2, expandSpedo3, expandScheduler1, expandScheduler2]; //Stores the actual expanded image elements
 
-var imgToChange = null;
-
-for (var i = 0; i < images.length; i++) {
-    images[i].setAttribute("onclick", "showProjectImg('" + images[i].id + "')");
-};
-
-function showProjectImg (imgName) {
-    console.log(imgName);
-
+function showProjectImg(imgName) { //Shows container div with darker blured background as well as the img with the passed in ID
     expandImgDiv.classList.add('showExpandedImgDiv');
     for (var i = 0; i < images.length; i++) {
         if(imgName == images[i].id) {
-            console.log(images[i] + ' ' + expandedImages[i]);
             expandedImages[i].classList.add('showExpandedImg');
         }
     };
-}
+};
+
+function hideProjectImages() { //Removes the classes that display larger images
+    expandImgDiv.classList.remove('showExpandedImgDiv');
+    for (var i = 0; i < images.length; i++) {
+        expandedImages[i].classList.remove('showExpandedImg');
+    };
+};
