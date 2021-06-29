@@ -20,17 +20,18 @@ hr {
 }
 
 header {
-    height: 180px; //Header height
+    height: 85vh; //Header height
     background-color: $blue; //Sets bg color to desired color
 
     color: $white;
 
     //Sets background img positioning to right and auto height fill
-    background-image: url('/images/me.png'); 
+    background-image: url('/images/placeholder.jpg'); 
     background-size: auto 100%; // W x H
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
     background-position-x: right;
-    background-position-y: bottom;
     //Sets background img positioning to right and auto height fill
 
     div:nth-of-type(1) { //Contains header main text
