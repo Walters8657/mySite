@@ -75,6 +75,10 @@ nav {
         margin: 10px;
         text-align: center;
     }
+    .navActivePage {
+        border-bottom: solid $black 2px;
+        padding-bottom: 5px;
+    }
 }
 
 footer {
