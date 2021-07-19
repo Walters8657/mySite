@@ -25,8 +25,7 @@ hr {
 
     color: $white;
 
-    background-image: url('/images/placeholder.jpg'); 
-    background-size: auto 100%; // W x H
+    background-image: url('/images/placeholder.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -61,9 +60,11 @@ hr {
 
 #nonIndexHeader {
     height: 150px;
-    background-image: none;
+    background-image: url('/images/me.png');
+    background-size: contain;
     div:nth-of-type(1) {
         justify-content: left;
+        margin-right: 100px;
     }
 }
 
