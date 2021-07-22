@@ -25,11 +25,12 @@ hr {
 
     color: $white;
 
-    background-image: url('/images/placeholder.jpg');
+    background-image: url('/images/MeBG.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
+    background-position-y: top;
     background-position-x: right;
+
+    background-size: cover;
 
     div:nth-of-type(1) { //Contains header main text
         display: flex; //Centers header text vertically
