@@ -1,4 +1,20 @@
-<%- include ("./../partials/header", {page: "Home", title: "Michael Walters Development"}) %>  
+<%- include('../partials/head') %> 
+
+<body>
+
+<header id="indexHeader">
+    <div>
+        <span>
+            <h1>Michael Walters</h1>
+            <p>Web Development</p>
+        </span>
+    </div>
+
+    <%- include('../partials/socialLinks') %> 
+
+</header>
+
+<%- include('../partials/nav') %> 
 
 <div id="aboutMe">
     <h2>About Me</h2>
@@ -8,9 +24,9 @@
 
 <div id="speedometer" class="productHighlight">
     <div id="speedoImgContainer">
-        <img id="speedoImg1" onclick="showProjectImg('speedoImg1')" src="/images/appScreenshots/speedoGreen.svg" alt="Speedometer app screenshot">
-        <img id="speedoImg2" onclick="showProjectImg('speedoImg2')" src="/images/appScreenshots/speedoYellow.svg" alt="Speedometer app screenshot">
-        <img id="speedoImg3" onclick="showProjectImg('speedoImg3')" src="/images/appScreenshots/speedoRed.svg" alt="Speedometer app screenshot">
+        <img id="speedoImg1" class="previewImg" loading="lazy" onclick="showProjectImg('speedoImg1')" src="/images/appScreenshots/speedoGreen.svg" alt="Speedometer app screenshot">
+        <img id="speedoImg2" class="previewImg" loading="lazy" onclick="showProjectImg('speedoImg2')" src="/images/appScreenshots/speedoYellow.svg" alt="Speedometer app screenshot">
+        <img id="speedoImg3" class="previewImg" loading="lazy" onclick="showProjectImg('speedoImg3')" src="/images/appScreenshots/speedoRed.svg" alt="Speedometer app screenshot">
     </div>
 
     <div>
@@ -29,8 +45,8 @@
 
 <div id="schedulerApp" class="productHighlight">
     <div id="schedulerImgContainer">
-        <img id="cahsmImg1" onclick="showProjectImg('cahsmImg1')" src="/images/appScreenshots/schedulerCalendar.png" alt="Scheduler calendar screenshot">
-        <img id="cahsmImg2" onclick="showProjectImg('cahsmImg2')" src="/images/appScreenshots/schedulerNewEvent.png" alt="Scheduler new event screenshot">
+        <img id="cahsmImg1" class="previewImg" loading="lazy" onclick="showProjectImg('cahsmImg1')" src="/images/appScreenshots/schedulerCalendar.png" alt="Scheduler calendar screenshot">
+        <img id="cahsmImg2" class="previewImg" loading="lazy" onclick="showProjectImg('cahsmImg2')" src="/images/appScreenshots/schedulerNewEvent.png" alt="Scheduler new event screenshot">
     </div>
 
     <div>
@@ -49,12 +65,12 @@
 
 <div id="expandImages">
     <div>
-        <img id="expandSpedo1" onclick="" src="/images/appScreenshots/speedoGreen.svg" alt="Speedometer app screenshot">
-        <img id="expandSpedo2" onclick="" src="/images/appScreenshots/speedoYellow.svg" alt="Speedometer app screenshot">
-        <img id="expandSpedo3" onclick="" src="/images/appScreenshots/speedoRed.svg" alt="Speedometer app screenshot">
+        <img id="expandSpedo1" class="expandedImg" loading="lazy" onclick="" src="/images/appScreenshots/speedoGreen.svg" alt="Speedometer app screenshot">
+        <img id="expandSpedo2" class="expandedImg" loading="lazy" onclick="" src="/images/appScreenshots/speedoYellow.svg" alt="Speedometer app screenshot">
+        <img id="expandSpedo3" class="expandedImg" loading="lazy" onclick="" src="/images/appScreenshots/speedoRed.svg" alt="Speedometer app screenshot">
         
-        <img id="expandScheduler1" onclick="" src="/images/appScreenshots/schedulerCalendar.png" alt="Scheduler calendar screenshot">
-        <img id="expandScheduler2" onclick="" src="/images/appScreenshots/schedulerNewEvent.png" alt="Scheduler new event screenshot">
+        <img id="expandScheduler1" class="expandedImg" loading="lazy" onclick="" src="/images/appScreenshots/schedulerCalendar.png" alt="Scheduler calendar screenshot">
+        <img id="expandScheduler2" class="expandedImg" loading="lazy" onclick="" src="/images/appScreenshots/schedulerNewEvent.png" alt="Scheduler new event screenshot">
         <p onclick="hideProjectImages()">Close</p>
     </div>
 </div>

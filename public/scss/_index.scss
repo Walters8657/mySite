@@ -29,6 +29,7 @@
     div:nth-of-type(2) {
         p:nth-last-of-type(1) > a {
             display: block;
+            margin-top: 10px;
             text-align: right;
         }
     }
