@@ -1,59 +1,11 @@
 @import 'mixins';
 
-#aboutMe, #projects {
+#aboutMe {
     @include padding;
     max-width: 900px;
     margin: auto;
 }
 
-#projects {
-    h2 {
-        text-align: center;
-    }
-    hr {
-        width: 200px;
-    }
-
-    #projectSquares {
-        display: flex;
-        justify-content: space-between;
-        margin: 50px 0px;
-
-        span {
-            width: 250px;
-            height: 250px;
-            display: flex;
-            align-items: center;
-            position: relative;
-
-            box-shadow: 10px 10px 10px rgba(20, 17, 14, 0.4);
-            h3 {
-                color: $white;
-                background-color: rgba(20, 17, 14, 0.8);
-                position: absolute;
-                padding: 10px;
-                bottom: 0px;
-                width: 230.03px;
-                height: 62px;
-            }
-        }
-        #CMSSquare {
-            background-image: url("/images/appScreenshots/CMS.png");
-            background-size: cover;
-            background-position: -38px -20px;
-        }
-        #SpeedometerSquare {
-            background-image: url("/images/appScreenshots/SpeedoSquare.png");
-            background-size: cover;
-        }
-        #ScheduleSquare {
-            background-image: url("/images/appScreenshots/schedulerNewEvent.png");
-            background-size: cover;
-        }
-    }
-}
-
-/*
 .productHighlight {
     @include padding;
     @media (min-width: 980px) {
@@ -153,4 +105,3 @@
 .showExpandedImg {
     display: block !important;
 }
-*/
