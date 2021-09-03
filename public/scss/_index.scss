@@ -64,6 +64,15 @@
     }
 }
 
+#CMS {
+    #CMSImgContainer {
+        img {
+            display: block;
+            width: 300px;
+        }
+    }
+}
+
 #expandImages {
     //display: flex;
     display: none;
@@ -85,7 +94,8 @@
     img {
         display: none;
         max-height: 80vh;
-        max-width: 100vw;
+        max-width: calc(100vw - 40px);
+        margin: auto;
     }
 }
 
