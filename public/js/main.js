@@ -1,57 +1,25 @@
-function openCMSSquare() {
-    $("#SpeedometerParagraph").css("position", "absolute");
-    $("#ScheduleParagraph").css("position", "absolute");
-    
-    $("#SpeedometerParagraph").insertBefore("#CMSParagraph");
-    $("#ScheduleParagraph").insertBefore("#CMSParagraph");
-
-    $("#SpeedometerParagraph").fadeOut();
-    $("#ScheduleParagraph").fadeOut();
-    
-    $("#CMSParagraph").css("position", "static");        
-    $("#CMSParagraph").fadeIn();
-}
-
-function openSpeedometerSquare() {
-    $("#CMSParagraph").css("position", "absolute");
-    $("#ScheduleParagraph").css("position", "absolute");
-    
-    $("#CMSParagraph").insertBefore("#SpeedometerParagraph");
-    $("#ScheduleParagraph").insertBefore("#SpeedometerParagraph");
-
-    $("#CMSParagraph").fadeOut();
-    $("#ScheduleParagraph").fadeOut();
-    
-    $("#SpeedometerParagraph").css("position", "static");   
-    $("#SpeedometerParagraph").fadeIn();
-}
-
-function openScheduleSquare() {
-    $("#CMSParagraph").css("position", "absolute");
-    $("#SpeedometerParagraph").css("position", "absolute");
-    
-    $("#CMSParagraph").insertBefore("#ScheduleParagraph");
-    $("#SpeedometerParagraph").insertBefore("#ScheduleParagraph");
-    
-    $("#CMSParagraph").fadeOut();
-    $("#SpeedometerParagraph").fadeOut();
-    
-    $("#ScheduleParagraph").css("position", "static");   
-    $("#ScheduleParagraph").fadeIn();
-}
-
 if(location.pathname == "/") { //Run only on index page    
-    $( "#CMSSquare" ).click(function() {
-        openCMSSquare();
-    });
-
-    $( "#SpeedometerSquare" ).click(function() {
-        openSpeedometerSquare();
-    });
-
-    $( "#ScheduleSquare" ).click(function() {
-        openScheduleSquare();
-    });
+      
+    var images = document.getElementsByClassName("previewImg");
+    
+    var expandImgDiv = document.getElementById("expandImages"); //Select div that contains big images
+    var expandedImages = document.getElementsByClassName("expandedImg"); //Stores the actual expanded image elements
+    
+    function showProjectImg(imgName) { //Shows container div with darker blured background as well as the img with the passed in ID
+        expandImgDiv.classList.add('showExpandedImgDiv');
+        for (var i = 0; i < images.length; i++) {
+            if(imgName == images[i].id) {
+                expandedImages[i].classList.add('showExpandedImg'); //Show clicked on image
+            }
+        };
+    };
+    
+    function hideProjectImages() { //Removes the classes that display larger images
+        expandImgDiv.classList.remove('showExpandedImgDiv');
+        for (var i = 0; i < images.length; i++) {
+            expandedImages[i].classList.remove('showExpandedImg'); //Hide expanded image
+        };
+    };
 }
 
 //Gets the current pages nav link and underlines it

@@ -13,9 +13,6 @@
     hr {
         width: 200px;
     }
-    #projectSubtitle {
-        text-align: center;
-    }
 
     #projectSquares {
         display: flex;
@@ -25,7 +22,6 @@
         span {
             width: 250px;
             height: 250px;
-
             position: relative;
 
             box-shadow: 10px 10px 10px rgba(20, 17, 14, 0.4);
@@ -40,9 +36,6 @@
                 width: 230.03px;
                 height: 62px;
             }
-        }
-        span:hover {
-            cursor: pointer;
         }
         #CMSSquare {
             background-image: url("/images/appScreenshots/CMS.png");
@@ -61,17 +54,10 @@
 
     #projectParagraphs {
         div {
-            hr {
-                margin-left: 0;
-                width: 300px;
-            }
             p:nth-of-type(2) {
                 text-align: right;
                 margin-top: 10px;
             }
-        }
-        div:not(:nth-of-type(1)) {
-            display: none;
         }
     }
 }
