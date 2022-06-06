@@ -1,147 +1,60 @@
 @import 'mixins';
 
+#indexContainer {
+    display: flex;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+#showcaseContainer {
+    overflow-y:  auto;
+}
+
 #indexHeader {
+    align-self: center;
     nav ul {
-        text-align: right;
+        margin-left: 0px;
+        text-align: left;
     }
     div:nth-of-type(1) {
+        min-width: 500px;
         span {
             color: $black;
             text-align: left;
             h1 {
-                font-size: 80px;
+                font-size: 60px;
             }
             p {
-                 font-size: 35px;
+                 font-size: 30px;
                  margin-top: 15px;
                  line-height: 40px;
              }
-        }
-    }
-    div:nth-of-type(2) {
-        text-align: left;
-    }
-}
-
-@media (max-width: 998px) {
-    #indexHeader {
-        div:nth-of-type(1) {
-            span {
-                h1 {
-                    font-size: 70px;
-                }
-                p {
-                     font-size: 35px;
-                 }
-            }
-        }
-    }
-}
-
-@media (max-width: 930px) {
-    #indexHeader {
-        div:nth-of-type(1) {
-            span {
-                margin-right: auto;
-                h1 {
-                    display: inline-block;
-                    width: 250px;
-                }
-                p {
-                     text-align: left;
-                 }
-            }
-        }
-    }
-}
-
-@media (max-width: 635px) {
-    #indexHeader {
-        div:nth-of-type(1) {
-            span {
-                margin-left: 20px;
-            }
-        }
-    }
-}
-
-@media (max-width: 635px) {
-    #indexHeader {
-        div:nth-of-type(1) {
-            span {
-                h1 {
-                    font-size: 50px;
-                }
-                p {
-                    font-size: 25px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    #indexHeader {
-        div:nth-of-type(1) {
-            span {
-                margin: 20px -20px;
-                padding: 20px;
-                width: calc(100vw);
-                background-image: linear-gradient(rgba(250, 250, 250, .5), rgba(250, 250, 250, .5));
-                h1, p {
-                    width: 100%;
-                    text-align: center;
-                }
-            }
         }
     }
 }
 
 .productHighlight {
     @include padding;
-    @media (min-width: 980px) {
-        display: grid;
-        grid-template-columns: auto 300px 600px auto;
-        column-gap: 20px;
-        div:nth-of-type(1) {
-            grid-column: 2/3;
-        }
-        div:nth-of-type(2) {
-            display: flex;
-            align-self: center;
-            
-        }
-    }
-    div:nth-of-type(1) {
-        margin: auto;
-        height: 316px;
-        width: 300px;
+    hr {
+        max-width: 450px;
+        margin-left: 0px;
     }
     div:nth-of-type(2) {
-        p:nth-last-of-type(1) > a {
-            display: block;
-            margin-top: 10px;
-            text-align: right;
-        }
+        margin-top: 10px;
     }
-    img:hover {
-        cursor: pointer;
+    .productImage {
+        margin: 20px auto;
     }
 }
 
 #speedometer {
     #speedoImgContainer {
+        width: calc(580px);
+        margin: auto;
         img {
-            width: 150px;
-            position: relative;
-        }
-        img:nth-of-type(2) {
-            margin-left: -80px;
-            top: 25px;
-        }
-        img:nth-of-type(3) {
-            margin-left: -80px;
-            top: 50px;
+            width: 170px;
+            margin: auto 10px;
         }
     }
 }
@@ -150,7 +63,8 @@
     #schedulerImgContainer {
         img {
             display: block;
-            width: 300px;
+            width: 560px;
+            margin: auto;
         }
     }
 }
@@ -159,7 +73,8 @@
     #CMSImgContainer {
         img {
             display: block;
-            width: 300px;
+            width: 560px;
+            margin: auto;
         }
     }
 }
