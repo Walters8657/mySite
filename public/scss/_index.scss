@@ -44,6 +44,7 @@
 
 .productHighlight {
     @include padding;
+    max-width: 100vw;
     hr {
         max-width: 450px;
         margin-left: 0px;
@@ -107,6 +108,22 @@
                 color: $black;
             }
         }
+
+        #schedulerImgContainer, #CMSImgContainer {
+            img {
+                width: 90vw;
+            }
+        }
+
+        #speedoImgContainer {
+            width: calc(90vw);
+            margin: auto;
+            img {
+                width: 29vw;
+                margin: auto auto;
+            }
+        }
+
         footer {
             img {
                 filter: none;
