@@ -231,6 +231,15 @@ footer img {
   overflow: hidden;
 }
 
+#indexContainer footer {
+  background-color: #fafafa;
+  color: #322b24;
+}
+
+#indexContainer footer img {
+  filter: brightness(24%);
+}
+
 #showcaseContainer {
   overflow-y: auto;
 }
@@ -303,7 +312,31 @@ footer img {
 }
 
 @media (max-width: 1135px) {
-  body {
-    background-color: red;
+  #indexContainer {
+    display: block;
+    overflow: auto;
+  }
+  #indexContainer #indexHeader {
+    padding: 10px auto;
+    background-color: #12487e;
+  }
+  #indexContainer #indexHeader div:nth-of-type(1) span {
+    color: #fafafa;
+  }
+  #indexContainer #indexHeader h1, #indexContainer #indexHeader nav ul, #indexContainer #indexHeader p {
+    text-align: center;
+  }
+  #indexContainer #indexHeader nav {
+    width: 100vw;
+    margin-left: -20px;
+    background-color: #fafafa;
+    color: #322b24;
+  }
+  #indexContainer footer {
+    background-color: #12487e;
+    color: #fafafa;
+  }
+  #indexContainer footer img {
+    filter: none;
   }
 }

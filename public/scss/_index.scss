@@ -1,10 +1,18 @@
 @import 'mixins';
+@import 'variables';
 
 #indexContainer {
     display: flex;
 
     height: 100vh;
     overflow: hidden;
+    footer {
+        img {
+            filter: brightness(24%)
+        }
+        background-color: $white;
+        color: $black;
+    }
 }
 
 #showcaseContainer {
@@ -80,8 +88,32 @@
 }
 
 @media (max-width: 1135px) {
-    body {
-        background-color: red;
+    #indexContainer {
+        display: block;
+        overflow: auto;
+        #indexHeader {
+            padding: 10px auto;
+            background-color: $blue;
+            div:nth-of-type(1) span {
+                color: $white;
+            }
+            h1, nav ul, p {
+                text-align: center;
+            }
+            nav {
+                width: 100vw;
+                margin-left: -20px;
+                background-color: $white;
+                color: $black;
+            }
+        }
+        footer {
+            img {
+                filter: none;
+            }
+            background-color: $blue;
+            color: $white;
+        }
     }
 }
 
