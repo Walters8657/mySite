@@ -17,6 +17,9 @@
         flex-direction: column;
         align-items: center;
     }
+    p {
+        margin: 0;
+    }
     nav {
         ul {
             li {
@@ -30,9 +33,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    .productImage {
+        margin-bottom: 30px;
+    }
     .productHighlight {
         width: 40vw;
-        margin: 30px;
+        margin: 0 30px 30px;
         box-sizing: border-box;
         img {
             max-width: 100%;
@@ -45,5 +51,16 @@
     justify-content: space-between;
     img {
         width: 31%;
+    }
+}
+
+@media (max-width: 900px) {
+    #showcaseContainer {
+        flex-direction: column;
+        .productHighlight {
+            box-sizing: border-box;
+            width: 90vw;
+            margin: 0 5vw 30px;
+        }
     }
 }

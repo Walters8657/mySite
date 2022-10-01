@@ -1,5 +1,4 @@
 $("#cmsReadMore").click(function() {
-    $("#cmsReadMore").css("margin", "0");
     $("#cmsReadMore").hide();
     $("#cmsReadMoreContent").slideToggle();
 })
