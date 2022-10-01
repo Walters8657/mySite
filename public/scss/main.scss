@@ -1,7 +1,10 @@
 @import 'fontSizes';
 @import 'variables';
 
-
+img {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
 
 @import 'resume';
 @import 'index';

@@ -1,12 +1,21 @@
 @import 'variables';
 
-img {
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
-#headerLogoImg {
-    width: 225px;
-    border-radius: 50%;
-    background-color: $blue;
+#indexHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    #headerLogoImg {
+        width: 225px;
+        border-radius: 50%;
+        background-color: $blue;
+    }
+    div span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        display: inline;
+    }
 }
