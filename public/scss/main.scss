@@ -1,17 +1,36 @@
 @import 'fontSizes';
 @import 'variables';
 
+body {
+    color: $black;
+    background-color: $white;
+}
+
 img {
     max-width: 100vw;
     overflow-x: hidden;
 }
 
-body {
-    color: $black;
+a {
+    text-decoration: none;
 }
 
 a, a:visited {
     color: $black;
+}
+
+footer {
+    background-color: $blue;
+    padding: 20px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 25px;
+        margin: 0 15px;
+    }
 }
 
 @import 'resume';
