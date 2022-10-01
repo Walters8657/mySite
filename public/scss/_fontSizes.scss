@@ -1,26 +1,41 @@
-html {
-    font-size: 20px;
+body {
+    font-size: 18px;
+    line-height: 1.75em;
+    font-family: 'Ubuntu', 'Sans-serif';
 }
 
-@media (max-width: 600px) {
-    html {
-        font-size: 17px;
+@media (max-width: 900px) {
+    body {
+        font-size: 16px;
     }
 }
 
 h1 {
-    font-size: 2.63rem;
+    font-size: 2.5em;
+    line-height: 2.5em;
 }
+
 h2 {
-    font-size: 2.1rem;
+    font-size: 2.25em;
+    line-height: 2.75em;
 }
+
 h3 {
-    font-size: 1.57rem;
+    font-size: 2em;
+    line-height: 2.5em;
 }
-h4, h5, h6 {
-    font-size: 1.31rem;
+
+h4 {
+    font-size: 1.75em;
+    line-height: 2.25em;
 }
-p, li {
-    font-size: 1rem;
-    line-height: 1.6rem;
+
+h5 {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+h6 {
+    font-size: 1.25em;
+    line-height: 1.75em;
 }

@@ -1,200 +1,65 @@
 @import 'fontSizes';
 @import 'variables';
-@import 'keyframes';
 
 body {
     color: $black;
     background-color: $white;
-    font-family: 'Ubuntu', 'sans-serif';
+}
+
+img {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
 }
 
 a, a:visited {
-    text-decoration: none;
     color: $black;
 }
 
-hr {
-    height: 2px;
-    border: none;
-    background-color: $black;
-}
-
-#indexHeader, #nonIndexHeader {
-    height: 85vh; //Header height
-    background-color: $blue; //Sets bg color to desired color
-
-    color: $white;
-
-    background-image: url('/images/meBG.jpg');
-    background-repeat: no-repeat;
-    background-position-y: top;
-    background-position-x: right;
-
-    background-size: cover;
-
-    div:nth-of-type(1) { //Contains header main text
-        display: flex; //Centers header text vertically
-        align-items: center;
-        justify-content: left;
-
-        height: calc(100% - 1.3rem); //Flex box fills height of header minus room for links
-
-        padding: 0px 20px;      
-
-        span {
-            display: inline;
-            h1 {
-                display: inline;
-                font-weight: 600;
-            }
-        }
-    }
-    div:nth-of-type(2) { //Social Links
-        text-align: center;
-        font-size: 0.8rem;
-        a:not(:nth-of-type(1)):before {
-            content: " | "
-        }
-        a {
-            color: $white;
-        }
-    }
-}
-
-#indexHeader {
-    div:nth-of-type(1) {
-        span {
-            color: $black;
-            margin: auto 320px auto 40px;
-            h1 {
-                font-size: 80px;
-            }
-            p {
-                 font-size: 40px;
-                 text-align: right;
-                 margin-top: 15px;
-                 line-height: 40px;
-             }
-        }
-    }
-}
-
-@media (max-width: 998px) {
-    #indexHeader {
-        div:nth-of-type(1) {
-            span {
-                h1 {
-                    font-size: 70px;
-                }
-                p {
-                     font-size: 35px;
-                 }
-            }
-        }
-    }
-}
-
-@media (max-width: 930px) {
-    #indexHeader {
-        div:nth-of-type(1) {
-            span {
-                margin-right: auto;
-                h1 {
-                    display: inline-block;
-                    width: 250px;
-                }
-                p {
-                     text-align: left;
-                 }
-            }
-        }
-    }
-}
-
-@media (max-width: 635px) {
-    #indexHeader {
-        div:nth-of-type(1) {
-            span {
-                margin-left: 20px;
-            }
-        }
-    }
-}
-
-@media (max-width: 635px) {
-    #indexHeader {
-        div:nth-of-type(1) {
-            span {
-                h1 {
-                    font-size: 50px;
-                }
-                p {
-                    font-size: 25px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    #indexHeader {
-        div:nth-of-type(1) {
-            span {
-                margin: 20px -20px;
-                padding: 20px;
-                width: calc(100vw);
-                background-image: linear-gradient(rgba(250, 250, 250, .5), rgba(250, 250, 250, .5));
-                h1, p {
-                    width: 100%;
-                    text-align: center;
-                }
-            }
-        }
-    }
-}
-
-
-#nonIndexHeader {
-    height: 150px;
-    background-image: url('/images/me.png');
-    background-size: contain;
-    div:nth-of-type(1) {
-        justify-content: left;
-        margin-right: 100px;
-    }
-}
-
-nav {
-    ul {
-        li {
-            display: inline;
-            a {
-                padding: 5px;
-            }
-        }
-        li:not(:nth-last-child(1)):after {
-            content: ' | ';
-        }
-        margin: 10px;
-        text-align: center;
-    }
-    .navActivePage {
-        border-bottom: solid $black 2px;
-        padding-bottom: 5px;
-    }
+p {
+    margin-bottom: 30px;
 }
 
 footer {
-    text-align: center;
     background-color: $blue;
+    padding: 20px;
     color: $white;
-    padding: 10px;
-    a, img {
-        height: 30px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     img {
-        margin: 0px 5px 5px;
+        width: 25px;
+        margin: 0 15px;
     }
+    p {
+        margin: 0;
+    }
+}
+
+//--------------
+//--------------
+// CLASSES
+//--------------
+//--------------
+
+.hideElement {
+    display: none;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.cursorHover {
+    cursor: pointer;
+}
+
+.cursorHover:hover {
+    filter: invert(0.4);
 }
 
 @import 'resume';

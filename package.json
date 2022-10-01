@@ -4,16 +4,18 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "ejs": "^3.1.6",
+    "ejs": "^3.1.8",
     "express": "^4.17.1",
     "node": "^15.10.0",
     "nodemon": "^2.0.7",
     "serve-favicon": "^2.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "sass": "node-sass --output-style expanded --precision 6 public/scss/main.scss public/css/main.css"
   },
   "author": "Michael Walters",
   "license": "ISC"
