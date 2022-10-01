@@ -6,8 +6,10 @@
     justify-content: center;
     height: 80vh;
     #headerLogoImg {
+        padding: 3px;
         width: 225px;
         border-radius: 50%;
+        border: solid $black 6px;
         background-color: $blue;
     }
     div span {
@@ -15,7 +17,33 @@
         flex-direction: column;
         align-items: center;
     }
-    nav ul li {
-        display: inline;
+    nav {
+        ul {
+            li {
+                display: inline;
+            }
+        }
+    } 
+}
+
+#showcaseContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .productHighlight {
+        width: 40vw;
+        margin: 30px;
+        box-sizing: border-box;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+#speedoImgContainer {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 31%;
     }
 }

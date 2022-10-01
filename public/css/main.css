@@ -39,6 +39,14 @@ img {
   overflow-x: hidden;
 }
 
+body {
+  color: #322b24;
+}
+
+a, a:visited {
+  color: #322b24;
+}
+
 #indexHeader {
   display: flex;
   align-items: center;
@@ -47,8 +55,10 @@ img {
 }
 
 #indexHeader #headerLogoImg {
+  padding: 3px;
   width: 225px;
   border-radius: 50%;
+  border: solid #322b24 6px;
   background-color: #12487e;
 }
 
@@ -60,4 +70,29 @@ img {
 
 #indexHeader nav ul li {
   display: inline;
+}
+
+#showcaseContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#showcaseContainer .productHighlight {
+  width: 40vw;
+  margin: 30px;
+  box-sizing: border-box;
+}
+
+#showcaseContainer .productHighlight img {
+  max-width: 100%;
+}
+
+#speedoImgContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#speedoImgContainer img {
+  width: 31%;
 }
