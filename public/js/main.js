@@ -1,8 +1,3 @@
-// function showMoreCMS() {
-//     document.getElementById("cmsReadMoreContent").className = "";
-//     document.getElementById("cmsReadMore").className = "hideElement";
-// }
-
 $("#cmsReadMore").click(function() {
     $("#cmsReadMore").hide();
     $("#cmsReadMoreContent").slideToggle();
