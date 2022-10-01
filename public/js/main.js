@@ -1,19 +1,24 @@
-function showMoreCMS() {
-    document.getElementById("cmsReadMoreContent").className = "";
-    document.getElementById("cmsReadMore").className = "hideElement";
-}
+// function showMoreCMS() {
+//     document.getElementById("cmsReadMoreContent").className = "";
+//     document.getElementById("cmsReadMore").className = "hideElement";
+// }
 
-function showLessCMS() {
-    document.getElementById("cmsReadMoreContent").className = "hideElement";
-    document.getElementById("cmsReadMore").className = "centerText";
-}
+$("#cmsReadMore").click(function() {
+    $("#cmsReadMore").hide();
+    $("#cmsReadMoreContent").slideToggle();
+})
 
-function showMoreSpeedo() {
-    document.getElementById("speedoReadMoreContent").className = "";
-    document.getElementById("speedoReadMore").className = "hideElement";
-}
+$("#cmsReadLess").click(function() {
+    $("#cmsReadMore").show();
+    $("#cmsReadMoreContent").slideToggle();
+})
 
-function showLessSpeedo() {
-    document.getElementById("speedoReadMoreContent").className = "hideElement";
-    document.getElementById("speedoReadMore").className = "centerText";
-}
+$("#speedoReadMore").click(function() {
+    $("#speedoReadMore").hide();
+    $("#speedoReadMoreContent").slideToggle();
+})
+
+$("#speedoReadLess").click(function() {
+    $("#speedoReadMore").show();
+    $("#speedoReadMoreContent").slideToggle();
+})
