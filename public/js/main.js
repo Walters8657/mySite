@@ -17,3 +17,13 @@ $("#speedoReadLess").click(function() {
     $("#speedoReadMore").show();
     $("#speedoReadMoreContent").slideToggle();
 })
+
+$("#homeLink").click(function() {
+    $("#showcaseHider").show();
+    $("#resumeHider").hide();
+})
+
+$("#resumeLink").click(function() {
+    $("#resumeHider").show();
+    $("#showcaseHider").hide();
+})
