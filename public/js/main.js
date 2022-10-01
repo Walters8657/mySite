@@ -5,7 +5,7 @@ function showMoreCMS() {
 
 function showLessCMS() {
     document.getElementById("cmsReadMoreContent").className = "hideElement";
-    document.getElementById("cmsReadMore").className = "";
+    document.getElementById("cmsReadMore").className = "centerText";
 }
 
 function showMoreSpeedo() {
@@ -15,5 +15,5 @@ function showMoreSpeedo() {
 
 function showLessSpeedo() {
     document.getElementById("speedoReadMoreContent").className = "hideElement";
-    document.getElementById("speedoReadMore").className = "";
+    document.getElementById("speedoReadMore").className = "centerText";
 }
