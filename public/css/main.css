@@ -71,6 +71,10 @@ footer img {
   margin: 0 15px;
 }
 
+.hideElement {
+  display: none;
+}
+
 #indexHeader {
   display: flex;
   align-items: center;
@@ -119,4 +123,8 @@ footer img {
 
 #speedoImgContainer img {
   width: 31%;
+}
+
+#cmsReadMore, #cmsReadLess, #speedoReadMore, #speedoReadLess {
+  text-align: center;
 }
