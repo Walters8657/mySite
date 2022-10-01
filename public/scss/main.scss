@@ -51,5 +51,13 @@ footer {
     text-align: center;
 }
 
+.cursorHover {
+    cursor: pointer;
+}
+
+.cursorHover:hover {
+    filter: invert(0.4);
+}
+
 @import 'resume';
 @import 'index';

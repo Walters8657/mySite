@@ -79,6 +79,14 @@ footer img {
   text-align: center;
 }
 
+.cursorHover {
+  cursor: pointer;
+}
+
+.cursorHover:hover {
+  filter: invert(0.4);
+}
+
 #indexHeader {
   display: flex;
   align-items: center;
