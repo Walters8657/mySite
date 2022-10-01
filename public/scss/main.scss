@@ -1,75 +1,7 @@
 @import 'fontSizes';
 @import 'variables';
 
-body {
-    color: $black;
-    background-color: $white;
-    font-family: 'Ubuntu', 'sans-serif';
-}
 
-a, a:visited {
-    text-decoration: none;
-    color: $black;
-}
-
-hr {
-    height: 2px;
-    border: none;
-    background-color: $black;
-}
-
-#indexHeader, #nonIndexHeader {
-    div:nth-of-type(1) { //Contains header main text
-
-        padding: 0px 20px;      
-
-        span {
-            display: inline;
-            h1 {
-                font-weight: 600;
-            }
-        }
-    }
-    div:nth-of-type(2) { //Social Links
-        font-size: 0.8rem;
-        a:not(:nth-of-type(1)):before {
-            content: " | "
-        }
-    }
-}
-
-nav {
-    ul {
-        li {
-            display: inline;
-            a {
-                padding: 5px;
-            }
-        }
-        li:not(:nth-last-child(1)):after {
-            content: ' | ';
-        }
-        margin: 10px;
-        text-align: center;
-    }
-    .navActivePage {
-        border-bottom: solid $black 2px;
-        padding-bottom: 5px;
-    }
-}
-
-footer {
-    text-align: center;
-    background-color: $blue;
-    color: $white;
-    padding: 10px;
-    a, img {
-        height: 30px;
-    }
-    img {
-        margin: 0px 5px 5px;
-    }
-}
 
 @import 'resume';
 @import 'index';
