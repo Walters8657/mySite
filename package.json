@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "node app.js",
-    "sass": "node-sass --output-style expanded --precision 6 public/scss/main.scss public/css/main.css"
+    "sass": "node-sass --output-style expanded --precision 6 public/scss/main.scss public/css/main.css",
+    "publish-site": "gcloud app deploy -v 20221001t193119"
   },
   "author": "Michael Walters",
   "license": "ISC"
