@@ -86,7 +86,9 @@ footer p {
   top: 0;
   left: 0;
   z-index: 0;
-  background-color: #332b24;
+  width: 100vw;
+  height: 80vh;
+  display: block;
 }
 
 .hideElement {

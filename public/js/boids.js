@@ -136,13 +136,16 @@ class Boid {
 }
 
 const flock = [];
+var canvas;
 
 function setup() {
-    var canvas = createCanvas(window.innerWidth, window.innerHeight * 0.8);
+    canvas = createCanvas(window.innerWidth, window.innerHeight * 0.8);
     canvas.parent('indexHeader');
 
-    for (var i = 0; i < 75; i++) {
-        flock.push(new Boid());
+    if (flock.length <= 0) {
+        for (var i = 0; i < 75; i++) {
+            flock.push(new Boid());
+        }
     }
 }
 
@@ -156,3 +159,11 @@ function draw() {
         Boid.update();
     }
 }
+
+function resizeCanvas() {
+    canvas = null;
+    document.getElementById("defaultCanvas0").parentNode.removeChild(document.getElementById("defaultCanvas0"));
+    setup();
+}
+
+window.addEventListener('resize', resizeCanvas, false);
