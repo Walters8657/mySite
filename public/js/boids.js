@@ -139,7 +139,7 @@ const flock = [];
 var canvas;
 
 function setup() {
-    canvas = createCanvas(window.innerWidth, window.innerHeight * 0.8);
+    canvas = createCanvas(document.body.clientWidth, window.innerHeight * 0.8);
     canvas.parent('indexHeader');
 
     if (flock.length <= 0) {

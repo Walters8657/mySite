@@ -47,7 +47,8 @@ footer {
     z-index: 0;
     width: 100vw;
     height: 80vh;
-    display: block;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 //--------------
