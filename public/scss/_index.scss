@@ -6,24 +6,37 @@
     justify-content: center;
     height: 80vh;
     #headerLogoImg {
-        padding: 3px;
+        padding: 5px;
         width: 225px;
         border-radius: 50%;
-        border: solid $black 6px;
+        border: solid $darkerBlack 6px;
         background-color: $blue;
     }
-    div span {
+    div {
+        z-index: 100;
+        color: $white;
+        span {
         display: flex;
         flex-direction: column;
         align-items: center;
+        }
+        h1, p, ul {
+            background-color: $darkerBlackOpacity;
+            box-shadow: 0 0 10px 10px $darkerBlackOpacity;
+            border-radius: 10px;
+        }
     }
     p {
-        margin: 0;
+        margin: 0 0 10px;
     }
     nav {
         ul {
             li {
                 display: inline;
+                color: $white;
+                a {
+                    color: $white;
+                }
             }
         }
     } 

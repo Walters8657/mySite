@@ -41,7 +41,7 @@ h6 {
 }
 
 body {
-  color: #322b24;
+  color: #332b24;
   background-color: #fafafa;
 }
 
@@ -55,7 +55,7 @@ a {
 }
 
 a, a:visited {
-  color: #322b24;
+  color: #332b24;
 }
 
 p {
@@ -79,6 +79,14 @@ footer img {
 
 footer p {
   margin: 0;
+}
+
+#defaultCanvas0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #332b24;
 }
 
 .hideElement {
@@ -162,7 +170,7 @@ footer p {
   }
   #resumeAside {
     display: inline-block;
-    border-right: 2px solid #322b24;
+    border-right: 2px solid #332b24;
   }
   #resumeAside ul {
     display: inline-block;
@@ -199,11 +207,16 @@ footer p {
 }
 
 #indexHeader #headerLogoImg {
-  padding: 3px;
+  padding: 5px;
   width: 225px;
   border-radius: 50%;
-  border: solid #322b24 6px;
+  border: solid #1b1d1e 6px;
   background-color: #12487e;
+}
+
+#indexHeader div {
+  z-index: 100;
+  color: #fafafa;
 }
 
 #indexHeader div span {
@@ -212,12 +225,23 @@ footer p {
   align-items: center;
 }
 
+#indexHeader div h1, #indexHeader div p, #indexHeader div ul {
+  background-color: rgba(27, 29, 30, 0.75);
+  box-shadow: 0 0 10px 10px rgba(27, 29, 30, 0.75);
+  border-radius: 10px;
+}
+
 #indexHeader p {
-  margin: 0;
+  margin: 0 0 10px;
 }
 
 #indexHeader nav ul li {
   display: inline;
+  color: #fafafa;
+}
+
+#indexHeader nav ul li a {
+  color: #fafafa;
 }
 
 #showcaseContainer {
