@@ -12,10 +12,6 @@ app.get("/", function(req, res) {
     res.render("pages/index");
 });
 
-app.get("/resume", function(req, res) {
-    res.render("pages/resume");
-});
-
 app.get("/intro", function(req, res) {
     res.redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 })

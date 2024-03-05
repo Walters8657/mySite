@@ -21,9 +21,17 @@ $("#speedoReadLess").click(function() {
 $("#homeLink").click(function() {
     $("#showcaseHider").show();
     $("#resumeHider").hide();
+    $("#funToolsHider").hide();
 })
 
 $("#resumeLink").click(function() {
     $("#resumeHider").show();
     $("#showcaseHider").hide();
+    $("#funToolsHider").hide();
+})
+
+$("#funToolsLink").click(function() {
+    $("#funToolsHider").show();
+    $("#showcaseHider").hide();
+    $("#resumeHider").hide();
 })
