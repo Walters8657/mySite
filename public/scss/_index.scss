@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
     #headerLogoImg {
         padding: 5px;
         width: 225px;
@@ -19,6 +18,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px auto;
+        nav {
+            margin-bottom: 20px;
+        }
         }
         h1, p, ul {
             background-color: $darkerBlackOpacity;

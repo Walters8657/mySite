@@ -139,7 +139,9 @@ const flock = [];
 var canvas;
 
 function setup() {
-    canvas = createCanvas(document.body.clientWidth, window.innerHeight * 0.8);
+    headerContentElement = $("#headerContent")
+    headerContentHeight = headerContentElement[0].offsetHeight;
+    canvas = createCanvas(document.body.clientWidth, headerContentHeight);
     canvas.parent('indexHeader');
 
     if (flock.length <= 0) {

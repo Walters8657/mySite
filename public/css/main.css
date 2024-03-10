@@ -87,7 +87,6 @@ footer p {
   left: 0;
   z-index: 0;
   width: 100vw;
-  height: 80vh;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -206,7 +205,6 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
 }
 
 #indexHeader #headerLogoImg {
@@ -226,6 +224,11 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px auto;
+}
+
+#indexHeader div span nav {
+  margin-bottom: 20px;
 }
 
 #indexHeader div h1, #indexHeader div p, #indexHeader div ul {
