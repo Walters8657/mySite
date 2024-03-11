@@ -112,50 +112,54 @@ $("#fTemp").val(fahrenheit);
 $("#kTemp").val(kelvin);
 
 function celsiusCalculateTemperatures() {
-    celsius = parseFloat($("#cTemp").val());
-    fahrenheit = (celsius * (9/5)) + 32;
-    kelvin = celsius + 273.15;
+    if ($("#cTemp").val() != "-" && $("#cTemp").val() != "") {
+        celsius = parseFloat($("#cTemp").val());
+        fahrenheit = (celsius * (9/5)) + 32;
+        kelvin = celsius + 273.15;
 
-    roundTemps();
-
-    if (celsius < -273.15) celsius = -273.15;
-
-    $("#cTemp").val(celsius);
-    $("#fTemp").val(fahrenheit);
-    $("#kTemp").val(kelvin);
+        if (celsius < -273.15) celsius = -273.15;
+        
+        roundTemps();
+        setTemps();
+    }
+    
 }
 
 function fahrenheitCalculateTemperatures() {
-    fahrenheit = parseFloat($("#fTemp").val());
-    celsius = (fahrenheit - 32) * (5/9);
-    kelvin = celsius + 273.15;
+    if ($("#fTemp").val() != "-" && $("#fTemp").val() != "") {
+        fahrenheit = parseFloat($("#fTemp").val());
+        celsius = (fahrenheit - 32) * (5/9);
+        kelvin = celsius + 273.15;
     
-    roundTemps();
-
-    if (fahrenheit < -459.67) fahrenheit = -459.57;
-
-    $("#fTemp").val(fahrenheit);
-    $("#cTemp").val(celsius);
-    $("#kTemp").val(kelvin);
+        if (fahrenheit < -459.67) fahrenheit = -459.57;
+        
+        roundTemps();
+        setTemps();
+    }
 }
 
 function kelvinCalculateTemperatures() {
-    kelvin = parseFloat($("#kTemp").val());
-    celsius = kelvin - 273.15;
-    fahrenheit = (celsius * (9/5)) + 32;
-
-    if (kelvin < 0) kelvin = 0;
+    if ($("#kTemp").val() != "-" && $("#kTemp").val() != "") {
+        kelvin = parseFloat($("#kTemp").val());
+        celsius = kelvin - 273.15;
+        fahrenheit = (celsius * (9/5)) + 32;
     
-    roundTemps();
-
-    $("#kTemp").val(kelvin);
-    $("#fTemp").val(fahrenheit);
-    $("#cTemp").val(celsius);
+        if (kelvin < 0) kelvin = 0;
+        
+        roundTemps();
+        setTemps();
+    }
 }
 
 function roundTemps() {
     celsius = Math.round(celsius * 100) / 100;
     fahrenheit = Math.round(fahrenheit * 100) / 100;
     kelvin = Math.round(kelvin * 100) / 100;
+}
+
+function setTemps() {
+    $("#kTemp").val(kelvin);
+    $("#fTemp").val(fahrenheit);
+    $("#cTemp").val(celsius);
 }
 // #endregion
