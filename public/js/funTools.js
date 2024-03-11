@@ -1,3 +1,4 @@
+// #region Time Saved Speeding
 speedLimit = 60;
 drivingSpeed = 70;
 
@@ -34,12 +35,17 @@ function speedLimitNumberInput() {
 
     if(speedLimit < 1)
     {
-        speedLimit = 1;
+        speedLimit = null;
+        $("#speedLimitNumber").val(speedLimit);
+    } else if (speedLimit > 310.8) {
+        speedLimit = 310.8;
         $("#speedLimitNumber").val(speedLimit);
     }
     
     $("#speedLimitSlider").val(speedLimit);
-    calculateSavings();
+
+    if (speedLimit != null)
+        calculateSavings();
 }
 
 function drivingSpeedNumberInput() {
@@ -47,12 +53,17 @@ function drivingSpeedNumberInput() {
 
     if(drivingSpeed < 1)
     {
-        drivingSpeed = 1;
+        drivingSpeed = null;
+        $("#drivingSpeedNumber").val(drivingSpeed);
+    } else if (drivingSpeed > 310.8) {
+        drivingSpeed = 310.8;
         $("#drivingSpeedNumber").val(drivingSpeed);
     }
 
     $("#drivingSpeedSlider").val(drivingSpeed);
-    calculateSavings();
+
+    if (drivingSpeed != null)
+        calculateSavings();
 }
 
 function milesNumberInput() {
@@ -89,3 +100,62 @@ function calculateSavings() {
 
     $("#timeSaved").html(timeSavedString);
 }
+// #endregion
+
+// #region Temperature Conversions
+celsius = 0;
+fahrenheit = 32;
+kelvin = 273.15;
+
+$("#cTemp").val(celsius);
+$("#fTemp").val(fahrenheit);
+$("#kTemp").val(kelvin);
+
+function celsiusCalculateTemperatures() {
+    celsius = parseFloat($("#cTemp").val());
+    fahrenheit = (celsius * (9/5)) + 32;
+    kelvin = celsius + 273.15;
+
+    roundTemps();
+
+    if (celsius < -273.15) celsius = -273.15;
+
+    $("#cTemp").val(celsius);
+    $("#fTemp").val(fahrenheit);
+    $("#kTemp").val(kelvin);
+}
+
+function fahrenheitCalculateTemperatures() {
+    fahrenheit = parseFloat($("#fTemp").val());
+    celsius = (fahrenheit - 32) * (5/9);
+    kelvin = celsius + 273.15;
+    
+    roundTemps();
+
+    if (fahrenheit < -459.67) fahrenheit = -459.57;
+
+    $("#fTemp").val(fahrenheit);
+    $("#cTemp").val(celsius);
+    $("#kTemp").val(kelvin);
+}
+
+function kelvinCalculateTemperatures() {
+    kelvin = parseFloat($("#kTemp").val());
+    celsius = kelvin - 273.15;
+    fahrenheit = (celsius * (9/5)) + 32;
+
+    if (kelvin < 0) kelvin = 0;
+    
+    roundTemps();
+
+    $("#kTemp").val(kelvin);
+    $("#fTemp").val(fahrenheit);
+    $("#cTemp").val(celsius);
+}
+
+function roundTemps() {
+    celsius = Math.round(celsius * 100) / 100;
+    fahrenheit = Math.round(fahrenheit * 100) / 100;
+    kelvin = Math.round(kelvin * 100) / 100;
+}
+// #endregion

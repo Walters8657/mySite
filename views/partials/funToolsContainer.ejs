@@ -1,17 +1,17 @@
 <span id="funToolsHider" class="hideElement">
     <div id="funToolsContainer">
         <div id="timeSavedSpeeding">
-            <h4>Time Saved</h4>
+            <h4>Time Saved <br> Speeding</h4>
             <span id="speedingInputs">
                 <span id="speedLimit">
                     <p>Speed <br> Limit</p>
-                    <input id="speedLimitSlider" type="range" orient="vertical" min="1" max="140" oninput="speedLimitSliderInput()">
-                    <input id="speedLimitNumber" type="number" pattern="[0-9]*" inputmode="numeric" step="1" min="1" max="140" oninput="speedLimitNumberInput()">
+                    <input id="speedLimitSlider" type="range" orient="vertical" min="1" max="310.8" oninput="speedLimitSliderInput()">
+                    <input id="speedLimitNumber" type="number" pattern="[0-9]*" inputmode="numeric" step="1" min="1" max="310.8" oninput="speedLimitNumberInput()">
                 </span>
                 <span id="drivingSpeed">
                     <p>Driving <br> Speed</p>
-                    <input id="drivingSpeedSlider" type="range" orient="vertical" min="1" max="140" oninput="drivingSpeedSliderInput()">
-                    <input id="drivingSpeedNumber" type="number" pattern="[0-9]*" inputmode="numeric" step="1" min="1" max="140" oninput="drivingSpeedNumberInput()">
+                    <input id="drivingSpeedSlider" type="range" orient="vertical" min="1" max="310.8" oninput="drivingSpeedSliderInput()">
+                    <input id="drivingSpeedNumber" type="number" pattern="[0-9]*" inputmode="numeric" step="1" min="1" max="310.8" oninput="drivingSpeedNumberInput()">
                 </span>
             </span>
             <span id="distanceInput">
@@ -19,6 +19,20 @@
                 Miles
             </span>
             <p id="timeSaved"></p>
+        </div>
+        <div id="temperatureConversions">
+            <h4>Temperature <br> Conversions</h4>
+            <span id="temperatureInputs">
+                <span>
+                    <input id="fTemp" type="number" oninput="fahrenheitCalculateTemperatures()" min="-459.67" pattern="[0-9]*"> Fahrenheit
+                </span>
+                <span>
+                    <input id="cTemp" type="number" oninput="celsiusCalculateTemperatures()" min="-273.15" pattern="[0-9]*"> Celsius
+                </span>
+                <span>
+                    <input id="kTemp" type="number" oninput="kelvinCalculateTemperatures()" min="0" pattern="[0-9]*"> Kelvin
+                </span>
+            </span>
         </div>
     </div>
 </span>

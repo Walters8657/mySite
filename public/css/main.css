@@ -63,6 +63,7 @@ p {
 }
 
 footer {
+  clear: both;
   background-color: #12487e;
   padding: 20px;
   color: #fafafa;
@@ -304,10 +305,25 @@ footer p {
   width: 50px;
 }
 
+#funToolsContainer div {
+  padding: 10px;
+  margin: 10px;
+  border: solid black 2px;
+  border-radius: 12px;
+  background-color: #f1f1f1;
+  float: left;
+}
+
+#funToolsContainer div h4 {
+  line-height: 2.2rem;
+  margin-bottom: 20px;
+}
+
 #funToolsContainer #timeSavedSpeeding {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 260px;
 }
 
 #funToolsContainer #timeSavedSpeeding #speedingInputs {
@@ -321,4 +337,18 @@ footer p {
   flex-direction: column;
   align-items: center;
   width: 100px;
+}
+
+#funToolsContainer #temperatureConversions #temperatureInputs {
+  width: 100%;
+}
+
+#funToolsContainer #temperatureConversions #temperatureInputs span {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+#funToolsContainer #temperatureConversions #temperatureInputs span input {
+  width: 80px;
 }

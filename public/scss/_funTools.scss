@@ -1,3 +1,5 @@
+@import 'variables';
+
 #funToolsContainer {
     text-align: center;
 
@@ -11,10 +13,25 @@
         width: 50px;
     }
 
+    div {   // "Card" Styling
+        padding: 10px;
+        margin: 10px;
+        border: solid black 2px;
+        border-radius: 12px;
+        background-color: $lightGray;
+        float: left;
+        
+        h4 {
+            line-height: 2.2rem;
+            margin-bottom: 20px;
+        }
+    }
+
     #timeSavedSpeeding {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 260px;
         #speedingInputs {
             width: 200px;
             display: flex;
@@ -25,6 +42,20 @@
                 flex-direction: column;
                 align-items: center;
                 width: 100px;
+            }
+        }
+    }
+
+    #temperatureConversions {
+        #temperatureInputs {
+            width: 100%;
+            span {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px auto;
+                input {
+                    width: 80px;
+                }
             }
         }
     }
